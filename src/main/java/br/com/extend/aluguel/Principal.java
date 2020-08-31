@@ -16,23 +16,24 @@ public class Principal {
 
 	public static void main(String[] args) throws FileNotFoundException, DocumentException  {
 	
-		String nomeDoArquivo = "Contrato Fernando e Lais";
-		String comodosDaCasa = "3 quartos, cozinha, lavanderia e banheiro";
-		String logradouro = "rua Boa Esperança, 183 casa 04";
-		String nomeRgCpfDoCasal = "Fernando Pereira Santos RG 447080660 CPF 36989526882 e Lais Ribeiro Pereira Silva RG 123456789 CPF 78945645612";
- 		String dataInicioLocacao = "15/07/2020";
- 		String dataTerminoLocacao = "15/07/2021";
- 	 	String diaPagamento = "15 (quinze)";			
-		String valorAluguel = "R$650,00 (seis centos e cinquenta reais)";
+		String nomeDoArquivo = "Contrato Reinaldo e Edna";
+		String comodosDaCasa = "cozinha, sala, quarto, banheiro e garagem";
+		String logradouro = "rua Augusta 196 casa 01";
+		String nomeRgCpfDoCasal = "Edna Maria da Silva RG 22.525.082-2 CPF 132.979.678-03 e Reinaldo Ferreira RG 29.278.052-7 CPF 279.207.028-52";
+ 		String dataInicioLocacao = "08/09/2020";
+ 		String dataTerminoLocacao = "08/09/2021";
+ 	 	String diaPagamento = "8 (oito)";			
+		String valorAluguel = "R$750,00 (sete centos e cinquenta reais)";
 		boolean pagouDeposito = false;
-		String logradouroAgua = "rua Boa Esperança 183 casa 8"; 
-		String numeroInstalacaoAgua = "0861451180"; 
-		String logradouroLuz = "rua Boa Esperança 183 casa 4"; 
-		String numeroInstalacaoLuz = "203628868";
-		String dataAssinatura = "15 de Julho de 2020.";
+		boolean precisaEscreverAguaLuz = false;
+			String logradouroAgua = "rua augusta 196 casa 8"; 
+			String numeroInstalacaoAgua = "0861451180"; 
+			String logradouroLuz = "rua augusta 196 casa 4"; 
+			String numeroInstalacaoLuz = "203628868";
+		String dataAssinatura = "31 de Agosto de 2020.";
 		
-		geraContrato(nomeDoArquivo, comodosDaCasa, logradouro, nomeRgCpfDoCasal, dataInicioLocacao, dataTerminoLocacao, diaPagamento, 
-					 valorAluguel, pagouDeposito, logradouroAgua, numeroInstalacaoAgua, logradouroLuz, numeroInstalacaoLuz, dataAssinatura);
+		geraContrato(nomeDoArquivo, comodosDaCasa, logradouro, nomeRgCpfDoCasal, dataInicioLocacao, dataTerminoLocacao, diaPagamento, valorAluguel, 
+					 pagouDeposito, precisaEscreverAguaLuz, logradouroAgua, numeroInstalacaoAgua, logradouroLuz, numeroInstalacaoLuz, dataAssinatura);
 	}
 	
 	private static void geraContrato(String nomeDoArquivo, 
@@ -43,7 +44,8 @@ public class Principal {
 									 String dataTerminoLocacao, 
 									 String diaPagamento, 
 									 String valorAluguel, 
-									 boolean pagouDeposito, 
+									 boolean pagouDeposito,
+									 boolean precisaEscreverAguaLuz,
 									 String logradouroAgua, 
 									 String numeroInstalacaoAgua, 
 									 String logradouroLuz, 
@@ -108,10 +110,13 @@ public class Principal {
 		p8.setAlignment(Paragraph.ALIGN_JUSTIFIED);
 		p8.add(new Chunk("CLÁUSULA QUARTA: ", fontBoldConteudo));
 		p8.add(new Chunk("O locatário será responsável por todas as despesas provenientes de sua utilização sejam elas: ligação ou consumo de luz, água e gás que serão pagas diretamente para as empresas fornecedoras dos referidos serviços.", fontConteudo));
-		p8.add("\n");
-		p8.add(new Chunk("•	Observação: o endereço da água fica situado na "+logradouroAgua+", com a instalação numero "+numeroInstalacaoAgua+".", fontConteudo));
-		p8.add("\n");
-		p8.add(new Chunk("•	Observação: o endereço da luz  fica situado na "+logradouroLuz+", com a instalação numero "+numeroInstalacaoLuz+".", fontConteudo));
+		
+		if(precisaEscreverAguaLuz) {
+			p8.add("\n");
+			p8.add(new Chunk("•	Observação: o endereço da água fica situado na "+logradouroAgua+", com a instalação numero "+numeroInstalacaoAgua+".", fontConteudo));
+			p8.add("\n");
+			p8.add(new Chunk("•	Observação: o endereço da luz  fica situado na "+logradouroLuz+", com a instalação numero "+numeroInstalacaoLuz+".", fontConteudo));			
+		}
 		p8.add("\n\n");
 
 		Paragraph p9 = new Paragraph();

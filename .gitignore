@@ -6,3 +6,4 @@ target/
 .metadata
 .classpath
 .project
+*.pdf

@@ -23,8 +23,6 @@ public class Contrato {
 	private String diaPagamento;
 	private String valorAluguel;
 	private boolean isDepositoPago;
-	//private boolean isNessarioEscreverAgua;
-	//private boolean isNecessarioEscreverLuz;
 	private String logradouroAgua;
 	private String numeroInstalacaoAgua;
 	private String logradouroLuz;
@@ -67,17 +65,6 @@ public class Contrato {
 		this.isDepositoPago = depositoPago;
 		return this;
 	}
-	/*
-	  
-	public Contrato nessarioEscreverAgua(boolean nessarioEscreverAgua) {
-		this.isNessarioEscreverAgua = nessarioEscreverAgua;
-		return this;
-	}
-	public Contrato necessarioEscreverLuz(boolean necessarioEscreverLuz) {
-		this.isNecessarioEscreverLuz = necessarioEscreverLuz;
-		return this;
-	}
-	 */
 	public Contrato logradouroAgua(String logradouroAgua) {
 		this.logradouroAgua = logradouroAgua;
 		return this;

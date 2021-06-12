@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) throws Exception {
 	
-		Casa casaX = new Casa().pegaCasa(2);
+		Casa casaX = new Casa().pegaCasa(4);
 		
 		new Contrato()
 			.nomeDoArquivo("Contrato Wesley Lucas")
@@ -20,7 +20,7 @@ public class Principal {
 			.numeroInstalacaoAgua(casaX.getNumeroInstalacaoAgua()) 
 			.logradouroLuz(casaX.getLogradouroLuz()) 
 			.numeroInstalacaoLuz(casaX.getNumeroInstalacaoLuz())
-			.dataAssinatura("28 de Janeiro de 2021.")
+			.dataAssinatura("29 de Janeiro de 2021.")
 			.gera();
 		
 		System.out.println("gerou!");

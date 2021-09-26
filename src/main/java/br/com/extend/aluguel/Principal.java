@@ -4,23 +4,23 @@ public class Principal {
 
 	public static void main(String[] args) throws Exception {
 	
-		Casa casaX = new Casa().pegaCasa(4);
+		Casa casaX = new Casa().pegaCasa(7);
 		
 		new Contrato()
-			.nomeDoArquivo("Contrato Wesley Lucas")
+			.nomeDoArquivo("Contrato Eneida Josefina")
 			.comodosDaCasa(casaX.getComodosDaCasa())
 			.logradouro(casaX.getLogradouro())
-			.nomeRgCpfDoCasal("Wesley Lucas Alves RG 53.390.234-4 CPF 468.315.518-40")
-			.dataInicioLocacao("05/02/2021")
-			.dataTerminoLocacao("05/02/2022")
-	 		.diaPagamento("5 (cinco)")
+			.nomeRgCpfDoCasal("Eneida Josefina CPF: 707.619.432-50 RNM: F069563-E")
+			.dataInicioLocacao("10/10/2021")
+			.dataTerminoLocacao("10/10/2022")
+	 		.diaPagamento("10 (dez)")
 	 		.valorAluguel(casaX.getValorAluguel())
-	 	 	.depositoPago(false)
+	 	 	.depositoPago(true)
 			.logradouroAgua(casaX.getLogradouroAgua())
 			.numeroInstalacaoAgua(casaX.getNumeroInstalacaoAgua()) 
 			.logradouroLuz(casaX.getLogradouroLuz()) 
 			.numeroInstalacaoLuz(casaX.getNumeroInstalacaoLuz())
-			.dataAssinatura("29 de Janeiro de 2021.")
+			.dataAssinatura("27 de Setembro de 2021.")
 			.gera();
 		
 		System.out.println("gerou!");

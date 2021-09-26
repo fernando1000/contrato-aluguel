@@ -38,7 +38,7 @@ public class Casa {
 		casas.put(44, new Casa("cozinha, 2 quartos, lavanderia e banheiro", "rua Boa Esperança, 183 casa 04", "R$650,00 (seiscentos e cinquenta reais)", "rua Boa Esperança 183 casa 8", "08614511/80", "rua Boa Esperança 183 casa 4", "0203628868")); 
 		casas.put(5, new Casa("cozinha, quarto e banheiro", "rua Augusta, 196 casa 05", "R$450,00 (quatrocentos e cinquenta reais)", "rua Boa Esperança, 183 casa 4", "08146259/08", "rua Augusta 196 casa 5", "202435470"));  
 		casas.put(6, new Casa("cozinha, quarto e banheiro", "rua Augusta, 196 casa 06", "R$450,00 (quatrocentos e cinquenta reais)", "rua Boa Esperança, 183 casa 9", "08614512/60", "rua Augusta 196 casa 6", "202435471")); 
-		casas.put(7, new Casa("cozinha, sala, quarto e banheiro", "rua Augusta, 196 casa 07", "R$600,00 (seiscentos reais)", null, null, null, null)); 
+		casas.put(7, new Casa("cozinha, sala, quarto e banheiro", "rua Augusta, 196 casa 07", "R$600,00 (seiscentos reais)", "rua Boa Esperança, 183 casa 7", "0861451503", "rua Augusta 196 casa 7", "202435472"));
 		casas.put(8, new Casa("cozinha, sala, quarto e banheiro", "na rua Augusta, 196 casa 08", "R$600,00 (seis centos reais)", "rua Boa Esperança, 183 casa 3", "08146234/41", "rua Augusta 196 casa 8", "0202435473"));
 	}
 	

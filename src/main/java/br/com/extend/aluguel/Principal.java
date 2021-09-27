@@ -24,6 +24,7 @@ public class Principal {
 			.gera();
 		
 		System.out.println("gerou!");
+		//teste
 	}
 	
 }

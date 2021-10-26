@@ -31,7 +31,7 @@ public class Casa {
 		adicionaCasas();
 	}
 	private void adicionaCasas() {
-		casas.put(1, new Casa("cozinha, sala, quarto, banheiro e garagem", "na rua Augusta 196 casa 01", "R$750,00 (setecentos e cinquenta reais)", null, null, null, null)); 
+		casas.put(1, new Casa("cozinha, sala, quarto, banheiro e garagem", "na rua Augusta 196 casa 01", "R$800,00 (oitocentos reais)", null, null, null, null)); 
 		casas.put(2, new Casa("cozinha, sala, quarto, banheiro e garagem", "na rua Boa Esperança, 183 casa 02", "R$700,00 (setecentos reais)", null, null, null, null)); 
 		casas.put(3, new Casa("cozinha, quarto e banheiro", "na rua Augusta, 196 casa 03", "R$450,00 (quatrocentos e cinquenta reais)", "rua Boa Esperança, 183", "08146241/70", null, null)); 
 		casas.put(4, new Casa("cozinha, quarto e banheiro", "rua Augusta, 196 casa 04", "R$450,00 (quatrocentos e cinquenta reais)", "rua Boa Esperança, 183 casa 10", "08614517/75", "rua Augusta 196 casa 4", "202435469")); 

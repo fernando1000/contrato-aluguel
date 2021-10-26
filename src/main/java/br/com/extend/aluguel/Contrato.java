@@ -123,7 +123,7 @@ public class Contrato {
 		Paragraph p5 = new Paragraph();
 		p5.setAlignment(Paragraph.ALIGN_JUSTIFIED);
 		p5.add(new Chunk("CLÁUSULA PRIMEIRA: ", fontBoldConteudo));
-		p5.add(new Chunk("O Prazo da locação é de 12 meses, iniciando em "+this.dataInicioLocacao+", com término em "+this.dataTerminoLocacao+", independentemente de aviso ou interpelação judicial ou mesmo extrajudicial.", fontConteudo));
+		p5.add(new Chunk("O Prazo da locação é de 24 meses, iniciando em "+this.dataInicioLocacao+", com término em "+this.dataTerminoLocacao+", independentemente de aviso ou interpelação judicial ou mesmo extrajudicial.", fontConteudo));
 		p5.add("\n\n");
 	
 		Paragraph p6 = new Paragraph();
